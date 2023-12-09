@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+    <link rel="stylesheet" href="./dist/css/bvi.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <div
+      id="finevision_banner"
+      onclick="finevision.activate_navbar()"
+      style="
+        cursor: pointer;
+        z-index: 9999;
+        background: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0);
+        float: right;
+        position: fixed;
+        top: 0px;
+      "
+    >
+      <img width="128" src="https://finevision.ru/static/banner1.jpg" />
+      <script src="https://finevision.ru/static/js/finevision_banner.js"></script>
+    </div>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="desktop__nav">
+        <div class="nav__top">
+          <div class="container">
+            <div class="nav__top-left">
+              <p class="nav__top-label"><i class="bx bx-map"></i>Город:</p>
+              <a href="#" class="nav__top-link">
+                Зенит, р.Мирабад г.Ташкент, Узбекситан
+              </a>
+            </div>
+            <div class="nav__top-right">
+              <div class="nav__top-item">
+                <a href="#" class="nav__top-telegram">
+                  <i class="bx bxl-telegram"></i> @Alfraganusuniversity</a
+                >
+              </div>
+              <div class="nav__top-item">
+                <a href="#" class="nav__top-call">
+                  <i class="bx bx-phone-call"></i> +998 99 200 02 02</a
+                >
+              </div>
+              <div class="nav__top-item">
+                <div class="easy__version">
+                  <button id="specialButton" type="button">
+                    <i class="bx bx-glasses"></i>
+                  </button>
+                </div>
+                <div class="lang">
+                  <button class="lang__btn">
+                    <span class="fi fi-ru"></span>
+                    Рус<i class="bx bx-chevron-down"></i>
+                  </button>
+                  <div class="lang__hidden">
+                    <a href="#" class="next__lang">
+                      <span class="fi fi-uz"></span>
+                      O'z
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav__bottom" id="navbar">
+          <div class="container">
+            <div class="nav__brand">
+              <a href="index.html">
+                <img
+                  width="178px"
+                  height="auto"
+                  src="./img/logo/brand.svg"
+                  alt=""
+                  class="nav__pic"
+                />
+              </a>
+            </div>
+            <div class="nav__links">
+              <ul class="main__ul">
+                <li>
+                  <a class="nav__link">
+                    Факультеты <i class="bx bx-chevron-down"></i>
+                  </a>
+                  <div class="dropdown">
+                    <ul>
+                      <li>
+                        <a href="direction.html" class="drop__link">
+                          Экономический факультет
+                        </a>
+                      </li>
+                      <li>
+                        <a href="direction.html" class="drop__link">
+                          Факультет информационных технологий
+                        </a>
+                      </li>
+                      <li>
+                        <a href="direction.html" class="drop__link">
+                          Филологический факультет
+                        </a>
+                      </li>
+                      <li>
+                        <a href="direction.html" class="drop__link">
+                          Факультет социальных наук
+                        </a>
+                      </li>
+                      <li>
+                        <a href="direction.html" class="drop__link">
+                          Факультет туризма
+                        </a>
+                      </li>
+                      <li>
+                        <a href="direction.html" class="drop__link">
+                          Факультет физической культуры и спорта
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link">
+                    Об университете <i class="bx bx-chevron-down"></i>
+                  </a>
+                  <div class="dropdown">
+                    <ul>
+                      <li class="dropper">
+                        <a href="buildings.html" class="drop__link"> Здания </a>
+                      </li>
+                      <li>
+                        <a href="about.html" class="drop__link">
+                          Об университете
+                        </a>
+                      </li>
+                      <li class="dropper">
+                        <a class="drop__link">
+                          Структура <i class="bx bx-chevron-right"></i
+                        ></a>
+                        <div class="drop-right">
+                          <ul>
+                            <li>
+                              <a href="management.html" class="drop__link">
+                                Руководство
+                              </a>
+                            </li>
+                            <li>
+                              <a href="mentors.html" class="drop__link">
+                                Преподавательский состав
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="documents.html" class="drop__link">
+                          Уставные документы
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link">
+                    Приём <i class="bx bx-chevron-down"></i>
+                  </a>
+                  <div class="dropdown">
+                    <ul>
+                      <li>
+                        <a href="admission.html" class="drop__link">
+                          Инструкции
+                        </a>
+                      </li>
+                      <li>
+                        <a href="grands.html" class="drop__link"> Гранты </a>
+                      </li>
+                      <li>
+                        <a href="prices.html" class="drop__link">
+                          Стоимость обучения
+                        </a>
+                      </li>
+                      <li>
+                        <a href="FAQ.html" class="drop__link">
+                          Вопросы-ответы
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link">
+                    Пресс-служба <i class="bx bx-chevron-down"></i>
+                  </a>
+                  <div class="dropdown">
+                    <ul>
+                      <li>
+                        <a href="news.html" class="drop__link"> Новости </a>
+                      </li>
+                      <li>
+                        <a href="events.html" class="drop__link">
+                          Мероприятия
+                        </a>
+                      </li>
+                      <li>
+                        <a href="media.html" class="drop__link"> Медиа </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="contacts.html" class="nav__link"> Контакты </a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__right">
+              <div class="nav__search">
+                <button class="searcher">
+                  <i class="bx bx-search"></i>
+                </button>
+              </div>
+              <div class="nav__button">
+                <button class="nav__btn"><p>Подать заявку</p></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="mobile" id="mobile">
+        <div class="container">
+          <div class="mobile__top">
+            <div class="mobile__brand">
+              <a href="index.html">
+                <img src="./img/logo/brand-white.svg" alt="" />
+              </a>
+            </div>
+            <div class="mobile__right">
+              <div class="mobile__search-wrap">
+                <button class="mobile__search" id="searcher">
+                  <i class="bx bx-search"></i>
+                </button>
+              </div>
+              <div class="burger">
+                <button class="burger__btn" id="burger">
+                  <div class="stick"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile__bottom" id="bottom">
+          <div class="mobile__wrapper">
+            <div class="mobile__header">
+              <div class="mobile__brand">
+                <a href="index.html">
+                  <img
+                    src="./img/logo/brand-white.svg"
+                    class="mobile__pic"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="mobile__x">
+                <button class="x__japan" id="x-japan">
+                  <i class="bx bx-x"></i>
+                </button>
+              </div>
+            </div>
+            <div class="mobile__links">
+              <ul class="active__ul show-ul" id="active-ul">
+                <p class="ul__title">Меню</p>
+                <li>
+                  <a href="index.html" class="mobile__link"> Главная </a>
+                </li>
+                <li>
+                  <button class="mobile__link" data-target="#direction">
+                    Факультеты
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="mobile__link" data-target="#about">
+                    Об университете
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="mobile__link" data-target="#addmission">
+                    Приём
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="mobile__link" data-target="#press">
+                    Пресс-служба
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </li>
+                <li>
+                  <a href="contacts.html" class="mobile__link"> Контакты </a>
+                </li>
+              </ul>
+              <ul class="hidden__ul hide-ul" id="direction" data-content>
+                <li>
+                  <button class="mobile__link closer">
+                    <i class="bx bx-chevron-left"></i>
+                    Меню
+                    <div></div>
+                  </button>
+                </li>
+                <li>
+                  <a href="direction.html" class="mobile__link">
+                    Экономический факультет
+                  </a>
+                </li>
+                <li>
+                  <a href="direction.html" class="mobile__link">
+                    Факультет информационных технологий
+                  </a>
+                </li>
+              </ul>
+              <ul class="hidden__ul hide-ul" id="about" data-content>
+                <li>
+                  <button class="mobile__link closer">
+                    <i class="bx bx-chevron-left"></i>
+                    Меню
+                    <div></div>
+                  </button>
+                </li>
+                <li>
+                  <a href="material.html" class="mobile__link"> Здания </a>
+                </li>
+                <li>
+                  <a href="product.html" class="mobile__link">
+                    Об университете
+                  </a>
+                </li>
+              </ul>
+              <ul class="hidden__ul hide-ul" id="addmission" data-content>
+                <li>
+                  <button class="mobile__link closer">
+                    <i class="bx bx-chevron-left"></i>
+                    Меню
+                    <div></div>
+                  </button>
+                </li>
+                <li>
+                  <a href="material.html" class="mobile__link"> Спортзал </a>
+                </li>
+                <li>
+                  <a href="product.html" class="mobile__link">
+                    Конференц-зал
+                  </a>
+                </li>
+              </ul>
+              <ul class="hidden__ul hide-ul" id="press" data-content>
+                <li>
+                  <button class="mobile__link closer">
+                    <i class="bx bx-chevron-left"></i>
+                    Меню
+                    <div></div>
+                  </button>
+                </li>
+                <li>
+                  <a href="material.html" class="mobile__link"> Инструкции </a>
+                </li>
+                <li>
+                  <a href="product.html" class="mobile__link"> Гранты </a>
+                </li>
+              </ul>
+              <div class="mobile__langs">
+                <div class="mobile__lang mobile__lang-active">
+                  <a href="#"> Русский </a>
+                </div>
+                <div class="mobile__lang">
+                  <a href="#"> O’zbekcha </a>
+                </div>
+                <div class="mobile__lang">
+                  <a href="#"> English </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="second__wrapper">
+            <div class="mobile__reg">
+              <button id="mobile-reg-btn" class="nav__btn">
+                <p>Подать заявку</p>
+              </button>
+            </div>
+            <div class="mobile__num nav__num">
+              <a href="tel:+99888900-3-009"
+                ><i class="bx bx-phone-call"></i>+998 88 900-3-009</a
+              >
+              <a href="tel:+99888900-3-009"
+                ><i class="bx bxl-telegram"></i> @Alfraganusuniversity</a
+              >
+              <div class="easy__version">
+                <button type="button">
+                  <i class="bx bx-glasses"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main" id="main">
+      <section class="home">
+        <div class="container home__content">
+          <h1
+            class="home__title"
+            data-aos="fade-up"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+          >
+            Самый инновационный университет в Узбекистане
+          </h1>
+          <p
+            class="home__sub"
+            data-aos="fade-up"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="800"
+          >
+            В этом году нас выбрали более 6500 претендентов, правильный выбор на
+            будущее, каторых готовы учиться и умножать знания
+          </p>
+          <div
+            class="home__button"
+            data-aos="fade-up"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="9000"
+          >
+            <div class="absolute__btn-1"></div>
+            <div class="absolute__btn-2"></div>
+            <button class="home__btn"><p>Подать заявку</p></button>
+          </div>
+        </div>
+        <div class="custom-select" style="width: 200px">
+          <select>
+            <option value="0">Select car:</option>
+            <option value="1">Audi</option>
+            <option value="2">BMW</option>
+            <option value="3">Citroen</option>
+            <option value="4">Ford</option>
+            <option value="5">Honda</option>
+            <option value="6">Jaguar</option>
+            <option value="7">Land Rover</option>
+            <option value="8">Mercedes</option>
+            <option value="9">Mini</option>
+            <option value="10">Nissan</option>
+            <option value="11">Toyota</option>
+            <option value="12">Volvo</option>
+          </select>
+        </div>
+
+        <div class="custom-select" style="width: 200px">
+          <select>
+            <option value="0">Select car:</option>
+            <option value="1">Audi</option>
+            <option value="2">BMW</option>
+            <option value="3">Citroen</option>
+            <option value="4">Ford</option>
+            <option value="5">Honda</option>
+            <option value="6">Jaguar</option>
+            <option value="7">Land Rover</option>
+            <option value="8">Mercedes</option>
+            <option value="9">Mini</option>
+            <option value="10">Nissan</option>
+            <option value="11">Toyota</option>
+            <option value="12">Volvo</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-xs-12">
+              <video
+                src="./video/video.webm"
+                autoplay
+                muted
+                playsinline
+                class="about__video"
+              ></video>
+            </div>
+            <div class="col-md-7 col-xs-12">
+              <div class="double__title">
+                <h4
+                  class="section__title"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                >
+                  Об университете
+                </h4>
+                <span class="ninja__title">Об университете</span>
+              </div>
+              <p class="about__txt">
+                Университет поможет вам пройти стажировку в государственных
+                органах и организациях, а также за рубежом, сформировать
+                лидерские качества и получить достойную работу, гарантируя вам
+                современное здание, комфортные условия, качественное образование
+                от квалифицированного зарубежного и отечественного коллектива
+                педагогов!
+              </p>
+              <div class="about__bottom">
+                <div class="about__items">
+                  <div class="about__item">
+                    <p
+                      class="about__num"
+                      id="count1"
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                    ></p>
+                    <p class="about__sub">направлений</p>
+                  </div>
+                  <div class="about__item">
+                    <p
+                      class="about__num"
+                      id="count2"
+                      data-aos="fade-down"
+                      data-aos-duration="500"
+                    >
+                      60+
+                    </p>
+                    <p class="about__sub">Менторов</p>
+                  </div>
+                  <div class="about__item">
+                    <p
+                      class="about__num"
+                      id="count3"
+                      data-aos="fade-up"
+                      data-aos-duration="500"
+                    >
+                      6200+
+                    </p>
+                    <p class="about__sub">Студентов</p>
+                  </div>
+                  <div class="about__item">
+                    <p
+                      class="about__num"
+                      id="count4"
+                      data-aos="fade-left"
+                      data-aos-duration="500"
+                    >
+                      6+
+                    </p>
+                    <p class="about__sub">факультетов</p>
+                  </div>
+                </div>
+                <div
+                  class="about__button"
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                >
+                  <div class="about__btn">
+                    <div class="absolute__btn-1"></div>
+                    <div class="absolute__btn-2"></div>
+                    <button class="home__btn about__batton">
+                      <p>Подать заявку</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="directions">
+        <div class="container">
+          <div class="double__title">
+            <h4
+              class="section__title"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
+              Факултеты
+            </h4>
+            <span class="ninja__title">Факултеты</span>
+          </div>
+          <div class="grid">
+            <div class="item" data-aos="fade-up" data-aos-duration="300">
+              <a href="#">
+                <div class="item__header">
+                  <div class="item__logo">
+                    <svg
+                      width="56"
+                      height="56"
+                      viewBox="0 0 56 56"
+                      fill="#000000"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.8335 39.6079V49.1279"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M10.5 46.666V49.0642"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M29.1665 31.4995V49.0828"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M38.5 22.1211V49.1019"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M47.8335 12.7988V49.0969"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M8.1665 38.4995L39.6665 6.99951"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M27.4165 6.99951H39.6665"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="item__name">Экономика</p>
+                </div>
+                <div class="item__footer">
+                  <p class="item__txt">
+                    Эта статья о хозяйственной деятельности
+                  </p>
+                  <button class="item__btn">
+                    <i class="bx bx-right-arrow-alt"></i>
+                  </button>
+                </div>
+                <img
+                  width="289px"
+                  height="299"
+                  src="./img/logo/round.svg"
+                  alt=""
+                  class="item__back"
+                />
+              </a>
+            </div>
+            <div class="item" data-aos="fade-up" data-aos-duration="500">
+              <a href="#">
+                <div class="item__header">
+                  <div class="item__logo">
+                    <svg
+                      width="56"
+                      height="56"
+                      viewBox="0 0 56 56"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 46.6662C14 38.2899 20.268 31.4995 28 31.4995C35.732 31.4995 42 38.2899 42 46.6662"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M15.1667 43.1663C15.1667 44.333 18.0834 45.4997 19.8334 44.333C21.5834 43.1663 22.1197 40.2438 23.9164 40.7469C25.7129 41.25 25.6667 44.9163 28.0001 46.6663C30.3334 48.4163 34.4167 47.833 36.1667 44.9163C37.9167 41.9997 36.0742 41.2122 37.4048 39.3199C38.2918 38.0585 39.424 38.3679 39.6667 38.4997"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M26.8333 24.4995H29.1666"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M37.51 26.2148L39.4888 27.4513"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16.51 27.4514L18.4888 26.2148"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M45.5684 32.8228L46.735 34.8435"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9.40161 34.8435L10.5683 32.8228"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M48.877 43.1729L49.1209 45.4933"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.71021 45.4933L5.95411 43.1729"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M49.0004 11.666L10.5 20.9993"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M18.6667 8.16602L33.8333 15.166L19.8333 18.666L14 10.4993L18.6667 8.16602Z"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 20.9997L7 16.333"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="item__name">Туризм</p>
+                </div>
+                <div class="item__footer">
+                  <p class="item__txt">
+                    посетителей в другую страну или местность, отличную
+                  </p>
+                  <button class="item__btn">
+                    <i class="bx bx-right-arrow-alt"></i>
+                  </button>
+                </div>
+                <img src="./img/logo/round.svg" alt="" class="item__back" />
+              </a>
+            </div>
+            <div class="item" data-aos="fade-up" data-aos-duration="700">
+              <a href="#">
+                <div class="item__header">
+                  <div class="item__logo">
+                    <svg
+                      width="56"
+                      height="56"
+                      viewBox="0 0 56 56"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.66675 7V49H35.0001V7H4.66675Z"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14 49V7"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M51.3333 7H42V44.3333L46.6667 49L51.3333 44.3333V7Z"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M42 14H51.3333"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M35.0001 7H4.66675"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M35.0001 49H4.66675"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M42 7V25.6667"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M51.3333 7V25.6667"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="item__name">Социальные науки</p>
+                </div>
+                <div class="item__footer">
+                  <p class="item__txt">
+                    посетителей в другую страну или местность, отличную
+                  </p>
+                  <button class="item__btn">
+                    <i class="bx bx-right-arrow-alt"></i>
+                  </button>
+                </div>
+                <img src="./img/logo/round.svg" alt="" class="item__back" />
+              </a>
+            </div>
+            <div class="item" data-aos="fade-up" data-aos-duration="900">
+              <a href="#">
+                <div class="item__header">
+                  <div class="item__logo">
+                    <svg
+                      width="56"
+                      height="57"
+                      viewBox="0 0 56 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M49 28.9961V11.4961C49 9.5631 47.433 7.99609 45.5 7.99609H10.5C8.56701 7.99609 7 9.5631 7 11.4961V46.4961C7 48.4291 8.56701 49.9961 10.5 49.9961H28"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M37.3335 45.3296C41.1995 45.3296 44.3335 42.1956 44.3335 38.3296C44.3335 34.4636 41.1995 31.3296 37.3335 31.3296C33.4675 31.3296 30.3335 34.4636 30.3335 38.3296C30.3335 42.1956 33.4675 45.3296 37.3335 45.3296Z"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M43.1665 42.9961L48.9998 47.6628"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16.3335 19.6626H39.6668"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16.3335 28.9961H25.6668"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="item__name">Филология</p>
+                </div>
+                <div class="item__footer">
+                  <p class="item__txt">
+                    Эта статья о хозяйственной деятельности
+                  </p>
+                  <button class="item__btn">
+                    <i class="bx bx-right-arrow-alt"></i>
+                  </button>
+                </div>
+                <img src="./img/logo/round.svg" alt="" class="item__back" />
+              </a>
+            </div>
+            <div class="item" data-aos="fade-up" data-aos-duration="1100">
+              <a href="#">
+                <div class="item__header">
+                  <div class="item__logo">
+                    <svg
+                      width="56"
+                      height="57"
+                      viewBox="0 0 56 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.5 7.99609H10.5C8.56701 7.99609 7 9.5631 7 11.4961V37.1628C7 39.0958 8.56701 40.6628 10.5 40.6628H45.5C47.433 40.6628 49 39.0958 49 37.1628V25.4961"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M28 40.6626V49.9959"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M37.3334 7.99609L32.6667 12.6628L37.3334 17.3294"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M44.3333 7.99609L48.9999 12.6628L44.3333 17.3294"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16.3333 49.9961H39.6666"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="item__name">Информационные технологии</p>
+                </div>
+                <div class="item__footer">
+                  <p class="item__txt">
+                    посетителей в другую страну или местность, отличную
+                  </p>
+                  <button class="item__btn">
+                    <i class="bx bx-right-arrow-alt"></i>
+                  </button>
+                </div>
+                <img src="./img/logo/round.svg" alt="" class="item__back" />
+              </a>
+            </div>
+            <div class="item" data-aos="fade-up" data-aos-duration="1300">
+              <a href="#">
+                <div class="item__header">
+                  <div class="item__logo">
+                    <svg
+                      width="56"
+                      height="57"
+                      viewBox="0 0 56 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.6666 5.6626H37.3333M18.6666 5.6626H9.33325V17.3293L18.6666 24.3293M18.6666 5.6626V24.3293M37.3333 5.6626H46.6666V17.3293L37.3333 24.3293M37.3333 5.6626V24.3293M18.6666 27.8941C21.1434 25.6772 24.4143 24.3293 27.9999 24.3293C31.5856 24.3293 34.8564 25.6772 37.3333 27.8941M18.6666 27.8941C15.8024 30.4576 13.9999 34.1829 13.9999 38.3293C13.9999 46.0612 20.268 52.3293 27.9999 52.3293C35.7319 52.3293 41.9999 46.0612 41.9999 38.3293C41.9999 34.1829 40.1974 30.4576 37.3333 27.8941M18.6666 27.8941V24.3293M37.3333 27.8941V24.3293"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M37.3333 5.6626H46.6666V17.3293L37.3333 24.3293"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.6666 5.6626H9.33325V17.3293L18.6666 24.3293"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M42 38.3296C42 34.1833 40.1975 30.458 37.3333 27.8945C34.8565 25.6776 31.5856 24.3296 28 24.3296C24.4144 24.3296 21.1435 25.6776 18.6667 27.8945C15.8025 30.458 14 34.1833 14 38.3296C14 46.0616 20.268 52.3296 28 52.3296C35.732 52.3296 42 46.0616 42 38.3296Z"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.6667 5.66309H37.3334V24.3298V27.8946C34.8566 25.6777 31.5857 24.3298 28.0001 24.3298C24.4144 24.3298 21.1436 25.6777 18.6667 27.8946V24.3298V5.66309Z"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M28.0001 44.1628V32.4961L25.6667 33.6628M28.0001 44.1628H30.3334M28.0001 44.1628H25.6667"
+                        stroke="#1E1A22"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="item__name">Физическая культура и спорт</p>
+                </div>
+                <div class="item__footer">
+                  <p class="item__txt">
+                    посетителей в другую страну или местность, отличную
+                  </p>
+                  <button class="item__btn">
+                    <i class="bx bx-right-arrow-alt"></i>
+                  </button>
+                </div>
+                <img src="./img/logo/round.svg" alt="" class="item__back" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="events">
+        <div class="container">
+          <div class="double__title">
+            <h4
+              class="section__title"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
+              Мероприятия Альфрагануса
+            </h4>
+            <span class="ninja__title">Мероприятия Альфрагануса</span>
+          </div>
+          <div class="event__items">
+            <div
+              class="event__item inner__item"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <a href="#">
+                <div class="item__wrap item__wrep">
+                  <div class="item__col">
+                    <p class="number">7</p>
+                    <p class="date">Фев 2022</p>
+                    <p class="week">Субота</p>
+                  </div>
+                  <div class="item__col image__col">
+                    <img
+                      src="./img/about-1.jpg"
+                      width="220px"
+                      height="auto"
+                      alt=""
+                      class="event__img"
+                    />
+                    <p class="event__txt">
+                      Абу́-ль-Абба́с А́хмад ибн Муха́ммад аль-Ферга́ни — один из
+                      среднеазиатский астроном...
+                    </p>
+                    <p class="news__link hidan__link">Read more...</p>
+                  </div>
+                  <div class="item__col">
+                    <p class="clock">13:00</p>
+                    <p class="theme">Семинария</p>
+                    <button class="event__btn"><p>Узнать больше</p></button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="event__item inner__item"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              <a href="#">
+                <div class="item__wrap item__wrep">
+                  <div class="item__col">
+                    <p class="number">7</p>
+                    <p class="date">Фев 2022</p>
+                    <p class="week">Субота</p>
+                  </div>
+                  <div class="item__col image__col">
+                    <img
+                      src="./img/about-1.jpg"
+                      width="220px"
+                      height="auto"
+                      alt=""
+                      class="event__img"
+                    />
+                    <p class="event__txt">
+                      Абу́-ль-Абба́с А́хмад ибн Муха́ммад аль-Ферга́ни — один из
+                      среднеазиатский астроном...
+                    </p>
+                    <p class="news__link hidan__link">Read more...</p>
+                  </div>
+                  <div class="item__col">
+                    <p class="clock">13:00</p>
+                    <p class="theme">Семинария</p>
+                    <button class="event__btn"><p>Узнать больше</p></button>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="event__button">
+            <button class="event__batton"><p>Показать всё</p></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="blue">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-xs-12 blue__right">
+              <img src="./img/logo/round.svg" alt="" class="blue__back" />
+              <h4 class="blue__title">
+                Современное будущее в ваших руках Успей стать нашим учеником
+              </h4>
+              <p class="blue__sub">
+                В этом году нас выбрали более 6500 претендентов, правильный
+                выбор на будущее!
+              </p>
+              <a href="#" class="blue__link">
+                Подробнее <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div
+                class="about__button"
+                data-aos="fade-left"
+                data-aos-duration="500"
+              >
+                <div class="blue__btn">
+                  <div class="absolute__btn-1"></div>
+                  <div class="absolute__btn-2"></div>
+                  <button class="home__btn"><p>Подать заявку</p></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <div class="news__header">
+            <div class="double__title">
+              <h4
+                class="section__title"
+                data-aos="fade-right"
+                data-aos-duration="500"
+              >
+                Новости
+              </h4>
+              <span class="ninja__title">Новости</span>
+            </div>
+            <div class="swiper__btns"></div>
+          </div>
+          <div class="swiper newsSwiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                <a href="#">
+                  <div class="news__img">
+                    <img
+                      src="./img/news-1.jpg"
+                      width="100%"
+                      height="257px"
+                      alt=""
+                      class="news__pic"
+                    />
+                  </div>
+                  <div class="news__info">
+                    <p class="news__date">
+                      <i class="bx bx-calendar"></i> 18:55 / 27.10.2022
+                    </p>
+                  </div>
+                  <div class="news__content">
+                    <p class="news__txt">
+                      My Freighter компанияси томонидан дунёдаги йирик юк
+                      ташувчи самолёт Boeing 747 Ўзбекистонга келтирилди
+                    </p>
+                    <p class="news__link">читать...</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                <a href="#">
+                  <div class="news__img">
+                    <img src="./img/news-2.jpg" alt="" class="news__pic" />
+                  </div>
+                  <div class="news__info">
+                    <p class="news__date">
+                      <i class="bx bx-calendar"></i> 18:55 / 27.10.2022
+                    </p>
+                  </div>
+                  <div class="news__content">
+                    <p class="news__txt">
+                      My Freighter компанияси томонидан дунёдаги йирик юк
+                      ташувчи самолёт Boeing 747 Ўзбекистонга келтирилди
+                    </p>
+                    <p class="news__link">читать...</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                <a href="#">
+                  <div class="news__img">
+                    <img src="./img/news-3.jpg" alt="" class="news__pic" />
+                  </div>
+                  <div class="news__info">
+                    <p class="news__date">
+                      <i class="bx bx-calendar"></i> 18:55 / 27.10.2022
+                    </p>
+                  </div>
+                  <div class="news__content">
+                    <p class="news__txt">
+                      My Freighter компанияси томонидан дунёдаги йирик юк
+                      ташувчи самолёт Boeing 747 Ўзбекистонга келтирилди
+                    </p>
+                    <p class="news__link">читать...</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                <a href="#">
+                  <div class="news__img">
+                    <img src="./img/news-4.jpg" alt="" class="news__pic" />
+                  </div>
+                  <div class="news__info">
+                    <p class="news__date">
+                      <i class="bx bx-calendar"></i> 18:55 / 27.10.2022
+                    </p>
+                  </div>
+                  <div class="news__content">
+                    <p class="news__txt">
+                      My Freighter компанияси томонидан дунёдаги йирик юк
+                      ташувчи самолёт Boeing 747 Ўзбекистонга келтирилди
+                    </p>
+                    <p class="news__link">читать...</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="event__button">
+            <button class="event__batton"><p>Показать всё</p></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="container">
+          <div class="double__title">
+            <h4
+              class="section__title"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
+              Наши партнеры
+            </h4>
+            <span class="ninja__title">Наши партнеры</span>
+          </div>
+          <div
+            class="swiper partnersSwiper"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img
+                    src="./img/logo/part-1.svg"
+                    width="100%"
+                    height="auto"
+                    alt=""
+                    class="part__pic"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-2.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-3.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-4.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-5.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-6.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-7.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-8.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper partnersSwiper2"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img
+                    src="./img/logo/part-1.svg"
+                    width="100%"
+                    height="auto"
+                    alt=""
+                    class="part__pic"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-2.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-3.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-4.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-5.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-6.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-7.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="part__img">
+                  <img src="./img/logo/part-8.svg" alt="" class="part__pic" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12">
+            <img src="./img/logo/round.svg" alt="" class="footer__back" />
+            <div class="footer__brand">
+              <img
+                src="./img/logo/brand-white.svg"
+                alt=""
+                class="footer__pic"
+                width="178px"
+                height="auto"
+              />
+            </div>
+            <p class="footer__txt">
+              Обнаружив в тексте ошибку, выделите её и нажмите Ctrl+Enter
+            </p>
+            <p class="footer__txt">
+              При использовании материалов сайта Alfraganus, ссылка на источник
+              обязательна.
+            </p>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <h4 class="footer__title">Факултеты</h4>
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__link"> Социальные науки </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Экономика </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Туризм </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Филология </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">
+                  Физическая культура и спорт
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Информационные технологии </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-xs-12">
+            <h4 class="footer__title">Приём</h4>
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__link"> Инструкции </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Гранты </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Стоимость обучения </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Вопросы-ответы </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <h4 class="footer__title">Контактные данные</h4>
+            <ul class="footer__info">
+              <li>
+                <p class="info__label"><i class="bx bx-map"></i> Город:</p>
+                <a href="#" class="footer__info-link">
+                  Зенит, р.Мирабад г.Ташкент, Узбекситан
+                </a>
+              </li>
+              <li>
+                <p class="info__label"><i class="bx bxl-telegram"></i></p>
+                <a href="#" class="footer__info-link">
+                  @Alfraganusuniversity
+                </a>
+              </li>
+              <li>
+                <p class="info__label">
+                  <i class="bx bx-phone-call"></i>
+                </p>
+                <a href="#" class="footer__info-link"> +998 99 200 02 02 </a>
+              </li>
+            </ul>
+            <div class="footer__socs">
+              <div class="footer__soc">
+                <a href="#" target="_blank" nofollow>
+                  <i class="bx bxl-telegram"></i>
+                </a>
+              </div>
+              <div class="footer__soc">
+                <a href="#" target="_blank" nofollow>
+                  <i class="bx bxl-instagram"></i>
+                </a>
+              </div>
+              <div class="footer__soc">
+                <a href="#" target="_blank" nofollow>
+                  <i class="bx bxl-youtube"></i>
+                </a>
+              </div>
+              <div class="footer__soc">
+                <a href="#" target="_blank" nofollow>
+                  <i class="bx bxl-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="bottom__left">
+            <p class="bottom__txt">© 2022 Alfraganus</p>
+            <p class="bottom__txt">Политика обработки персональных данных</p>
+          </div>
+          <div class="bottom__right">
+            <p class="creator">
+              Сайт разработал:
+              <a href="https://ndc.uz" target="_blank" nofollow>
+                <img src="./img/logo/ndc.svg" alt="" class="kreator" />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

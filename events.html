@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="desktop__nav">
+        <div class="nav__top">
+          <div class="container">
+            <div class="nav__top-left">
+              <p class="nav__top-label"><i class="bx bx-map"></i>Город:</p>
+              <a href="#" class="nav__top-link">
+                Зенит, р.Мирабад г.Ташкент, Узбекситан
+              </a>
+            </div>
+            <div class="nav__top-right">
+              <div class="nav__top-item">
+                <a href="#" class="nav__top-telegram">
+                  <i class="bx bxl-telegram"></i> @Alfraganusuniversity</a
+                >
+              </div>
+              <div class="nav__top-item">
+                <a href="#" class="nav__top-call">
+                  <i class="bx bx-phone-call"></i> +998 99 200 02 02</a
+                >
+              </div>
+              <div class="nav__top-item">
+                <div class="easy__version">
+                  <button id="specialButton" type="button">
+                    <i class="bx bx-glasses"></i>
+                  </button>
+                </div>
+                <div class="lang">
+                  <button class="lang__btn">
+                    <span class="fi fi-ru"></span>
+                    Рус<i class="bx bx-chevron-down"></i>
+                  </button>
+                  <div class="lang__hidden">
+                    <a href="#" class="next__lang">
+                      <span class="fi fi-uz"></span>
+                      O'z
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav__bottom" id="navbar">
+          <div class="container">
+            <div class="nav__brand">
+              <a href="index.html">
+                <img
+                  width="178px"
+                  height="auto"
+                  src="./img/logo/brand.svg"
+                  alt=""
+                  class="nav__pic"
+                />
+              </a>
+            </div>
+            <div class="nav__links">
+              <ul class="main__ul">
+                <li>
+                  <a class="nav__link">
+                    Факультеты <i class="bx bx-chevron-down"></i>
+                  </a>
+                  <div class="dropdown">
+                    <ul>
+                      <li>
+                        <a href="direction.html" class="drop__link">
+                          Экономический факультет
+                        </a>
+                      </li>
+                      <li>
+                        <a href="direction.html" class="drop__link">
+                          Факультет информационных технологий
+                        </a>
+                      </li>
+                      <li>
+                        <a href="direction.html" class="drop__link">
+                          Филологический факультет
+                        </a>
+                      </li>
+                      <li>
+                        <a href="direction.html" class="drop__link">
+                          Факультет социальных наук
+                        </a>
+                      </li>
+                      <li>
+                        <a href="direction.html" class="drop__link">
+                          Факультет туризма
+                        </a>
+                      </li>
+                      <li>
+                        <a href="direction.html" class="drop__link">
+                          Факультет физической культуры и спорта
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link">
+                    Об университете <i class="bx bx-chevron-down"></i>
+                  </a>
+                  <div class="dropdown">
+                    <ul>
+                      <li class="dropper">
+                        <a href="buildings.html" class="drop__link"> Здания </a>
+                      </li>
+                      <li>
+                        <a href="about.html" class="drop__link">
+                          Об университете
+                        </a>
+                      </li>
+                      <li class="dropper">
+                        <a class="drop__link">
+                          Структура <i class="bx bx-chevron-right"></i
+                        ></a>
+                        <div class="drop-right">
+                          <ul>
+                            <li>
+                              <a href="management.html" class="drop__link">
+                                Руководство
+                              </a>
+                            </li>
+                            <li>
+                              <a href="mentors.html" class="drop__link">
+                                Преподавательский состав
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="documents.html" class="drop__link">
+                          Уставные документы
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link">
+                    Приём <i class="bx bx-chevron-down"></i>
+                  </a>
+                  <div class="dropdown">
+                    <ul>
+                      <li>
+                        <a href="admission.html" class="drop__link">
+                          Инструкции
+                        </a>
+                      </li>
+                      <li>
+                        <a href="grands.html" class="drop__link"> Гранты </a>
+                      </li>
+                      <li>
+                        <a href="prices.html" class="drop__link">
+                          Стоимость обучения
+                        </a>
+                      </li>
+                      <li>
+                        <a href="FAQ.html" class="drop__link">
+                          Вопросы-ответы
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav__link">
+                    Пресс-служба <i class="bx bx-chevron-down"></i>
+                  </a>
+                  <div class="dropdown">
+                    <ul>
+                      <li>
+                        <a href="news.html" class="drop__link"> Новости </a>
+                      </li>
+                      <li>
+                        <a href="events.html" class="drop__link">
+                          Мероприятия
+                        </a>
+                      </li>
+                      <li>
+                        <a href="media.html" class="drop__link"> Медиа </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="contacts.html" class="nav__link"> Контакты </a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__right">
+              <div class="nav__search">
+                <button class="searcher">
+                  <i class="bx bx-search"></i>
+                </button>
+              </div>
+              <div class="nav__button">
+                <button class="nav__btn"><p>Подать заявку</p></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="mobile" id="mobile">
+        <div class="container">
+          <div class="mobile__top">
+            <div class="mobile__brand">
+              <a href="index.html">
+                <img src="./img/logo/brand-white.svg" alt="" />
+              </a>
+            </div>
+            <div class="mobile__right">
+              <div class="mobile__search-wrap">
+                <button class="mobile__search" id="searcher">
+                  <i class="bx bx-search"></i>
+                </button>
+              </div>
+              <div class="burger">
+                <button class="burger__btn" id="burger">
+                  <div class="stick"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile__bottom" id="bottom">
+          <div class="mobile__wrapper">
+            <div class="mobile__header">
+              <div class="mobile__brand">
+                <a href="index.html">
+                  <img
+                    src="./img/logo/brand-white.svg"
+                    class="mobile__pic"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="mobile__x">
+                <button class="x__japan" id="x-japan">
+                  <i class="bx bx-x"></i>
+                </button>
+              </div>
+            </div>
+            <div class="mobile__links">
+              <ul class="active__ul show-ul" id="active-ul">
+                <p class="ul__title">Меню</p>
+                <li>
+                  <a href="index.html" class="mobile__link"> Главная </a>
+                </li>
+                <li>
+                  <button class="mobile__link" data-target="#direction">
+                    Факультеты
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="mobile__link" data-target="#about">
+                    Об университете
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="mobile__link" data-target="#addmission">
+                    Приём
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="mobile__link" data-target="#press">
+                    Пресс-служба
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </li>
+                <li>
+                  <a href="contacts.html" class="mobile__link"> Контакты </a>
+                </li>
+              </ul>
+              <ul class="hidden__ul hide-ul" id="direction" data-content>
+                <li>
+                  <button class="mobile__link closer">
+                    <i class="bx bx-chevron-left"></i>
+                    Меню
+                    <div></div>
+                  </button>
+                </li>
+                <li>
+                  <a href="direction.html" class="mobile__link">
+                    Экономический факультет
+                  </a>
+                </li>
+                <li>
+                  <a href="direction.html" class="mobile__link">
+                    Факультет информационных технологий
+                  </a>
+                </li>
+              </ul>
+              <ul class="hidden__ul hide-ul" id="about" data-content>
+                <li>
+                  <button class="mobile__link closer">
+                    <i class="bx bx-chevron-left"></i>
+                    Меню
+                    <div></div>
+                  </button>
+                </li>
+                <li>
+                  <a href="material.html" class="mobile__link"> Здания </a>
+                </li>
+                <li>
+                  <a href="product.html" class="mobile__link">
+                    Об университете
+                  </a>
+                </li>
+              </ul>
+              <ul class="hidden__ul hide-ul" id="addmission" data-content>
+                <li>
+                  <button class="mobile__link closer">
+                    <i class="bx bx-chevron-left"></i>
+                    Меню
+                    <div></div>
+                  </button>
+                </li>
+                <li>
+                  <a href="material.html" class="mobile__link"> Спортзал </a>
+                </li>
+                <li>
+                  <a href="product.html" class="mobile__link">
+                    Конференц-зал
+                  </a>
+                </li>
+              </ul>
+              <ul class="hidden__ul hide-ul" id="press" data-content>
+                <li>
+                  <button class="mobile__link closer">
+                    <i class="bx bx-chevron-left"></i>
+                    Меню
+                    <div></div>
+                  </button>
+                </li>
+                <li>
+                  <a href="material.html" class="mobile__link"> Инструкции </a>
+                </li>
+                <li>
+                  <a href="product.html" class="mobile__link"> Гранты </a>
+                </li>
+              </ul>
+              <div class="mobile__langs">
+                <div class="mobile__lang mobile__lang-active">
+                  <a href="#"> Русский </a>
+                </div>
+                <div class="mobile__lang">
+                  <a href="#"> O’zbekcha </a>
+                </div>
+                <div class="mobile__lang">
+                  <a href="#"> English </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="second__wrapper">
+            <div class="mobile__reg">
+              <button id="mobile-reg-btn" class="nav__btn">
+                <p>Подать заявку</p>
+              </button>
+            </div>
+            <div class="mobile__num nav__num">
+              <a href="tel:+99888900-3-009"
+                ><i class="bx bx-phone-call"></i>+998 88 900-3-009</a
+              >
+              <a href="tel:+99888900-3-009"
+                ><i class="bx bxl-telegram"></i> @Alfraganusuniversity</a
+              >
+              <div class="easy__version">
+                <button type="button">
+                  <i class="bx bx-glasses"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="top">
+        <div class="container">
+          <h1 class="top__title">Mероприятия</h1>
+          <div class="crumbs">
+            <ol>
+              <li>
+                <a href="#" class="last__page"> Главная </a>
+              </li>
+              <li>
+                <p class="slash">/</p>
+              </li>
+              <li>
+                <a href="#" class="last__page"> Об университете </a>
+              </li>
+              <li>
+                <p class="slash">/</p>
+              </li>
+              <li>
+                <p class="this__page">Mероприятия</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <div class="inner__body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-12 inner__left">
+              <div class="left__wrap">
+                <div class="sidebar">
+                  <div class="sidebar__header">
+                    <h4 class="sidebar__title">Пресс-служба</h4>
+                  </div>
+                  <ul class="sidebar__links">
+                    <li>
+                      <a href="#" class="sidebar__link active"> Новости </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sidebar__link"> Мероприятия</a>
+                    </li>
+                    <li>
+                      <a href="#" class="sidebar__link"> Медиа </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="banners">
+                  <div class="banner">
+                    <a href="#">
+                      <p class="banner__title">
+                        Подать заявление в Университет Алфраганус в Ташкенте
+                      </p>
+                      <p class="banner__link">
+                        Перейти <i class="bx bx-chevron-right"></i>
+                      </p>
+                      <img
+                        src="./img/logo/round.svg"
+                        alt=""
+                        class="banner__back"
+                      />
+                    </a>
+                  </div>
+                  <div class="banner">
+                    <a href="#">
+                      <p class="banner__title">
+                        Запланируйте посещение Университета Alfraganus в
+                        Ташкенте
+                      </p>
+                      <p class="banner__link">
+                        Свяжитесь с нами <i class="bx bx-chevron-right"></i>
+                      </p>
+                      <img
+                        src="./img/logo/woman.svg"
+                        alt=""
+                        class="banner__back"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-xs-12">
+              <div class="events__header">
+                <div class="event__search">
+                  <label for="search" class="glass"
+                    ><i class="bx bx-search"></i
+                  ></label>
+                  <input type="text" placeholder="Поиск" id="search" />
+                </div>
+                <div class="event__btns">
+                  <select class="event__select">
+                    <option value="4">4</option>
+                    <option value="4">8</option>
+                    <option value="4">12</option>
+                  </select>
+
+                  <select class="event__select">
+                    <option value="Сортировка по">Сортировка по</option>
+                    <option value="Сегодня">Сегодня</option>
+                    <option value="На этой неделе">На этой неделе</option>
+                  </select>
+                </div>
+              </div>
+              <div class="event__items m-0">
+                <div class="event__item inner__item">
+                  <a href="#">
+                    <div class="item__wrap item__wrep">
+                      <div class="item__col">
+                        <p class="number">7</p>
+                        <p class="date">Фев 2022</p>
+                        <p class="week">Субота</p>
+                      </div>
+                      <div class="item__col image__col">
+                        <img
+                          src="./img/about-1.jpg"
+                          width="220px"
+                          height="auto"
+                          alt=""
+                          class="event__img"
+                        />
+                        <p class="event__txt">
+                          Абу́-ль-Абба́с А́хмад ибн Муха́ммад аль-Ферга́ни — один из
+                          среднеазиатский астроном...
+                        </p>
+                      </div>
+                      <div class="item__col">
+                        <p class="clock">13:00</p>
+                        <p class="theme">Семинария</p>
+                        <button class="event__btn"><p>Узнать больше</p></button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="event__item inner__item">
+                  <a href="#">
+                    <div class="item__wrap item__wrep">
+                      <div class="item__col">
+                        <p class="number">7</p>
+                        <p class="date">Фев 2022</p>
+                        <p class="week">Субота</p>
+                      </div>
+                      <div class="item__col image__col">
+                        <img
+                          src="./img/about-1.jpg"
+                          width="220px"
+                          height="auto"
+                          alt=""
+                          class="event__img"
+                        />
+                        <p class="event__txt">
+                          Абу́-ль-Абба́с А́хмад ибн Муха́ммад аль-Ферга́ни — один из
+                          среднеазиатский астроном...
+                        </p>
+                      </div>
+                      <div class="item__col">
+                        <p class="clock">13:00</p>
+                        <p class="theme">Семинария</p>
+                        <button class="event__btn"><p>Узнать больше</p></button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- !!!!!!!!!!!!!!!!!!!!!! AGAR EVENTS BO'MASA PASDEGINI KO'RSATASIZ !!!!!!!!!!!!!!!!!!!!!!! -->
+
+              <div class="news__empty d-none">
+                <img src="./img/logo/newspaper.svg" class="empty__pic" alt="" />
+                <p class="empty__txt">По этим параметрам ничего не найдено</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12">
+            <img src="./img/logo/round.svg" alt="" class="footer__back" />
+            <div class="footer__brand">
+              <img
+                src="./img/logo/brand-white.svg"
+                alt=""
+                class="footer__pic"
+                width="178px"
+                height="auto"
+              />
+            </div>
+            <p class="footer__txt">
+              Обнаружив в тексте ошибку, выделите её и нажмите Ctrl+Enter
+            </p>
+            <p class="footer__txt">
+              При использовании материалов сайта Alfraganus, ссылка на источник
+              обязательна.
+            </p>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <h4 class="footer__title">Факултеты</h4>
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__link"> Социальные науки </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Экономика </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Туризм </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Филология </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">
+                  Физическая культура и спорт
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Информационные технологии </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-xs-12">
+            <h4 class="footer__title">Приём</h4>
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__link"> Инструкции </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Гранты </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Стоимость обучения </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"> Вопросы-ответы </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <h4 class="footer__title">Контактные данные</h4>
+            <ul class="footer__info">
+              <li>
+                <p class="info__label"><i class="bx bx-map"></i> Город:</p>
+                <a href="#" class="footer__info-link">
+                  Зенит, р.Мирабад г.Ташкент, Узбекситан
+                </a>
+              </li>
+              <li>
+                <p class="info__label"><i class="bx bxl-telegram"></i></p>
+                <a href="#" class="footer__info-link">
+                  @Alfraganusuniversity
+                </a>
+              </li>
+              <li>
+                <p class="info__label">
+                  <i class="bx bx-phone-call"></i>
+                </p>
+                <a href="#" class="footer__info-link"> +998 99 200 02 02 </a>
+              </li>
+            </ul>
+            <div class="footer__socs">
+              <div class="footer__soc">
+                <a href="#" target="_blank" nofollow>
+                  <i class="bx bxl-telegram"></i>
+                </a>
+              </div>
+              <div class="footer__soc">
+                <a href="#" target="_blank" nofollow>
+                  <i class="bx bxl-instagram"></i>
+                </a>
+              </div>
+              <div class="footer__soc">
+                <a href="#" target="_blank" nofollow>
+                  <i class="bx bxl-youtube"></i>
+                </a>
+              </div>
+              <div class="footer__soc">
+                <a href="#" target="_blank" nofollow>
+                  <i class="bx bxl-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="bottom__left">
+            <p class="bottom__txt">© 2022 Alfraganus</p>
+            <p class="bottom__txt">Политика обработки персональных данных</p>
+          </div>
+          <div class="bottom__right">
+            <p class="creator">
+              Сайт разработал:
+              <a href="https://ndc.uz" target="_blank" nofollow>
+                <img src="./img/logo/ndc.svg" alt="" class="kreator" />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
